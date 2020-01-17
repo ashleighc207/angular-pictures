@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.caption {
+  margin: 0px;
+}
