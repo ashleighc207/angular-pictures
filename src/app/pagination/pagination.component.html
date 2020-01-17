@@ -1,9 +1,9 @@
 <div class="pagination">
   <div class="page prev">Prev</div>
-  <div class="page">1</div>
-  <div class="page">2</div>
-  <div class="page">3</div>
-  <div class="page">4</div>
-  <div class="page">5</div>
+  <div *ngFor="let image of images; let index = index">
+    <div class="page">
+      {{ index + 1 }}
+    </div>
+  </div>
   <div class="page next">Next</div>
 </div>

@@ -7,4 +7,10 @@
 
 .caption {
   margin: 0px;
+  margin-bottom: 15px;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
 }

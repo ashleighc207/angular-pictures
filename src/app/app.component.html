@@ -1,5 +1,5 @@
 <div class="main-content">
-  <app-pagination> </app-pagination>
+  <app-pagination [images]="images"> </app-pagination>
   <app-picture
     *ngFor="let image of images"
     [title]="image.title"
