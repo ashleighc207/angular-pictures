@@ -18,6 +18,8 @@
   justify-content: center;
   flex: 1 1 auto;
   padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.4);
 }
 
@@ -29,4 +31,24 @@
 .page.next {
   border-radius: 0px 5px 5px 0px;
   padding: 10px 20px;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #227384;
+  padding: 5px;
+}
+
+.page.active {
+  background-color: #227384;
+  color: #ffffff;
+}
+
+.page.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.page:focus {
+  outline: none;
 }

@@ -1,9 +1,24 @@
 <div class="pagination">
-  <div class="page prev">Prev</div>
-  <div *ngFor="let image of images; let index = index">
-    <div class="page">
-      {{ index + 1 }}
-    </div>
-  </div>
-  <div class="page next">Next</div>
+  <button
+    [ngClass]="{ disabled: currentPage === 0 }"
+    class="page prev"
+    (click)="navigatePage(currentPage - 1)"
+  >
+    Prev
+  </button>
+  <button
+    class="page"
+    [ngClass]="{ active: index === currentPage }"
+    *ngFor="let image of images; let index = index"
+    (click)="navigatePage(index)"
+  >
+    {{ index + 1 }}
+  </button>
+  <button
+    (click)="navigatePage(currentPage + 1)"
+    [ngClass]="{ disabled: currentPage === images.length - 1 }"
+    class="page next"
+  >
+    Next
+  </button>
 </div>
