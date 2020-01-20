@@ -9,7 +9,7 @@ export class PaginationComponent implements OnInit {
   @Input() images = [];
   @Input() currentPage = 0;
 
-  navigatePage(idx) {
+  navigatePage(idx: number) {
     this.currentPage = idx;
   }
 

@@ -6,14 +6,16 @@
   >
     Prev
   </button>
-  <button
-    class="page"
-    [ngClass]="{ active: index === currentPage }"
-    *ngFor="let image of images; let index = index"
-    (click)="navigatePage(index)"
-  >
-    {{ index + 1 }}
-  </button>
+  <ng-container *ngFor="let image of images; let index = index">
+    <button
+      class="page"
+      [ngClass]="{ active: index === currentPage }"
+      (click)="navigatePage(index)"
+    >
+      {{ index + 1 }}
+    </button>
+  </ng-container>
+
   <button
     (click)="navigatePage(currentPage + 1)"
     [ngClass]="{ disabled: currentPage === images.length - 1 }"
