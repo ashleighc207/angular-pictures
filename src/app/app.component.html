@@ -1,10 +1,4 @@
 <div class="main-content">
   <app-pagination [images]="images" [currentPage]="currentPage">
   </app-pagination>
-  <app-picture
-    *ngFor="let image of images"
-    [title]="image.title"
-    [url]="image.url"
-  >
-  </app-picture>
 </div>

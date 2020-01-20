@@ -8,7 +8,6 @@ import { Component, OnInit, Input } from "@angular/core";
 export class PictureComponent implements OnInit {
   @Input() title = "";
   @Input() url = "";
-
   constructor() {}
 
   ngOnInit() {}
